@@ -2,12 +2,15 @@ package com.epam.loops;
 
 public class MultiplicationTable {
 
-    public void printTable(int numberTableToPrint) {
-        System.out.println(numberTableToPrint+" \"'s multiplication table:");
-        for (int i = 1; i <=10 ; i++) {
-            int sum=numberTableToPrint*i;
-            System.out.println(numberTableToPrint+" x "+ i+" = " +sum);
-        }
-    }
+    public static int printTable(int numberTableToPrint) {
+        int limit = 10; // Ko'rsatilgan ko'paytirish jadvali oralig'ini o'zgartirishingiz mumkin
 
+        // Ko'paytirish jadvalini generatsiya qilish va chiqarish
+        for (int i = 1; i <= limit; i++) {
+            int multiplicationResult = numberTableToPrint * i;
+            System.out.println(i + " x " + numberTableToPrint + " = " + multiplicationResult);
+
+        }
+        return numberTableToPrint;
+    }
 }
