@@ -8,7 +8,7 @@ public class Pyramid {
                 if (j < cathetusLength - i - 1) {
                     System.out.print(" ");
                 } else {
-                    System.out.print(i);
+                    System.out.print(i+" ");
                 }
             }
             System.out.println();
