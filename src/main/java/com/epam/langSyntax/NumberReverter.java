@@ -3,14 +3,17 @@ package com.epam.langSyntax;
 import java.util.Scanner;
 
 public class NumberReverter {
+    static  int number;
     public void revert(int number) {
-        int kutilganRaqam = 0;
+        int a = number / 100;
+        int b = (number % 100) / 10;
+        int c = number % 10;
+        System.out.println("" + a+b+c);
+    }
 
-        while (number != 0) {
-            int qoldiq = number % 10;
-            kutilganRaqam = kutilganRaqam * 10 + qoldiq;
-            number /= 10;
-        }
+    public static void main(String[] args) {
+        NumberReverter numberReverter=new NumberReverter();
+        numberReverter.revert(number);
     }
 }
 

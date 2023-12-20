@@ -9,6 +9,6 @@ public class Power {
             result *= numberToPrint;
         }
 
-        System.out.println(numberToPrint + " raised to the power of " + power + " is: " + result);
+        System.out.println(result);
     }
 }
