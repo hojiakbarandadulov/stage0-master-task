@@ -2,19 +2,12 @@ package com.epam.langSyntax;
 
 public class DigitsSumCalculator {
 
-    public  int calculateSum(int number) {
+    public void calculateSum(int number) {
         int sum=0;
         for (int i = number; i !=0  ; i=i/10) {
             sum=sum+i%10;
         }
-        return sum;
-    }
-    public  long calculateSum(long number) {
-        long sum=0;
-        for (long i = number; i !=0  ; i=i/10) {
-            sum=sum+i%10;
-        }
-        return sum;
+        System.out.println(sum);
     }
 
 }
