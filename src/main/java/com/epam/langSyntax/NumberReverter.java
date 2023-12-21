@@ -5,16 +5,13 @@ import java.util.Scanner;
 public class NumberReverter {
     public void revert(int number) {
 
-        int num = number; //
-        int temp;
-        int reverseNum = 0;
-        for (; num != 0; ) {
-            temp = num % 10;
-            reverseNum = reverseNum * 10 + temp;
-
-            num = num / 10;
+        int reversed = 0;
+        while (number != 0) {
+            int lastDigit = number % 10;
+            reversed = reversed * 10 + lastDigit;
+            number /= 10;
         }
-        System.out.println(reverseNum);
+        System.out.println(reversed);
     }
 }
 
