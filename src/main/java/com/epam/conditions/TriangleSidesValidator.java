@@ -2,15 +2,15 @@ package com.epam.conditions;
 
 public class TriangleSidesValidator {
 
-    public void validate(int firstSide, int secondSide, int thirdSide) {
-        if (isValidTriangle(firstSide, secondSide, thirdSide)) {
+    public static  void validate(int firstSide, int secondSide, int thirdSide) {
+        if (firstSide + secondSide > thirdSide && firstSide + thirdSide > secondSide && secondSide + thirdSide > firstSide) {
             System.out.println("this is a valid triangle\n");
         } else {
             System.out.println("it's not a triangle\n");
         }
     }
 
-    private boolean isValidTriangle(int a, int b, int c) {
-        return a*a+b*b == c*c;
+    public static void main(String[] args) {
+       validate(1,4,4);
     }
 }

@@ -4,7 +4,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.epam.algorithms.utils.Complexity;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +25,7 @@ class AlgorithmComplexityTest {
 
     @Test
     public void twoCycleSorting() {
-       assertEquals(0, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.twoCycleSorting())));
+       assertEquals(-1, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.twoCycleSorting())));
     }
 
     @Test

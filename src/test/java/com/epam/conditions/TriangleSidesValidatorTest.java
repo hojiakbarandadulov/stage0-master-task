@@ -16,9 +16,9 @@ class TriangleSidesValidatorTest extends BaseIOTest {
 
     @Test
     void validate3PointsBuildUpInvalidTriangleZeroLength() {
-        TriangleSidesValidator triangleSidesValidator = new TriangleSidesValidator();
+      /*  TriangleSidesValidator triangleSidesValidator = new TriangleSidesValidator();*/
 
-        triangleSidesValidator.validate(1, 0, 4);
+        TriangleSidesValidator.validate(1, 0, 4);
 
         assertOutEquals("it's not a triangle\n");
     }
@@ -34,9 +34,8 @@ class TriangleSidesValidatorTest extends BaseIOTest {
 
     @Test
     void validate3PointsBuildUpInvalidTriangleTooLongSide() {
-        TriangleSidesValidator triangleSidesValidator = new TriangleSidesValidator();
 
-        triangleSidesValidator.validate(1, 7, 4);
+        TriangleSidesValidator.validate(1, 7, 4);
 
         assertOutEquals("it's not a triangle\n");
     }
